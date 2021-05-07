@@ -1,2 +1,2 @@
-# Batle-Game
+# Battle-Game
 Battle game.
