@@ -26,6 +26,11 @@ Castle * Battle::GetCastle()
 	return &BCastle;
 }
 
+void Battle::setCastle(Castle* castle) { this->BCastle = *(castle); }
+
+void Battle::setInactiveQueue(Queue<Enemy*> enemies) { this->Q_Inactive = enemies; }
+
+void Battle::setNumberOfEnemies(int number) { this->EnemyCount = number; }
 
 void Battle::RunSimulation()
 {
