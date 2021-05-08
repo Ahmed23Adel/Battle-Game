@@ -140,6 +140,15 @@
     <ClCompile Include="Castle\Castle.cpp">
       <Filter>Castle</Filter>
     </ClCompile>
+    <ClCompile Include="Fighter.cpp">
+      <Filter>Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Freezer.cpp">
+      <Filter>Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Healer.cpp">
+      <Filter>Enemies</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h">
@@ -219,5 +228,24 @@
     <ClInclude Include="Castle\Castle.h">
       <Filter>Castle</Filter>
     </ClInclude>
+    <ClInclude Include="Fighter.h">
+      <Filter>Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Freezer.h">
+      <Filter>Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Healer.h">
+      <Filter>Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Generic_DS\ArrayStack.h">
+      <Filter>Generic_DS</Filter>
+    </ClInclude>
+    <ClInclude Include="Generic_DS\PriorityQueue.h">
+      <Filter>Generic_DS</Filter>
+    </ClInclude>
+    <ClInclude Include="Generic_DS\Stack.h">
+      <Filter>Generic_DS</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadFromFile.h" />
   </ItemGroup>
 </Project>

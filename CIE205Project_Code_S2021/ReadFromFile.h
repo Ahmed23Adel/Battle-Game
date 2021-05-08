@@ -27,7 +27,7 @@ Castle* createCastle(ifstream& file)
 	castlePower = stoi(pch);
 	pch = strtok_s(NULL, " ", &context);
 
-	Castle* castle=new Castle; //use the data to create castle
+	Castle* castle=new Castle(castleHealth,n,castlePower); 
 	return castle;
 }
 
