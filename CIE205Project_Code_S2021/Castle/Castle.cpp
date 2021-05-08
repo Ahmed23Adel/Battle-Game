@@ -2,6 +2,19 @@
 
 
 
+Castle::Castle()
+{
+	Health = 0;
+	power = 0;
+	N = 0;
+}
+
+Castle::Castle(double Health, int N, double power)
+{
+	this->Health = Health;
+	this->N = N;
+	this->power = power;
+}
 
 void Castle::SetHealth(double h)
 {
@@ -11,7 +24,27 @@ void Castle::SetHealth(double h)
 		Health = 0; // killed
 }
 
+void Castle::SetN(int N)
+{
+	this->N = N;
+}
+
+void Castle::SetPower(double power)
+{
+	this->power = power;
+}
+
 double Castle::GetHealth() const
 {
 	return Health;
+}
+
+double Castle::GetN() const
+{
+	return N;
+}
+
+double Castle::GetPower() const
+{
+	return power;
 }

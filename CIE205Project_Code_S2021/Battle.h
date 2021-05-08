@@ -3,6 +3,7 @@
 #include "Enemies\Enemy.h"
 #include "Castle\Castle.h"
 #include "Generic_DS\Queue.h"
+#include "Generic_DS\PriorityQueue.h"
 #include "GUI\GUI.h"
 
 // it is the controller of the project
@@ -30,7 +31,6 @@ private:
 	int DemoListCount;
 	Enemy* DemoList[MaxEnemyCount];	//Important: This is just for demo
 	/// ==>
-
 
 	//
 	// TODO: Add More Data Members As Needed
