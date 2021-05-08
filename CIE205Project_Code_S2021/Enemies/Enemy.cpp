@@ -1,32 +1,34 @@
 #include "Enemy.h"
 
 
-Enemy::Enemy(int id, int arrTime, int d):ID(id),ArrvTime(arrTime)
+Enemy::Enemy(int id, ENMY_TYPE type, int arrTime, double health, int power,
+	int reload, int speed,int distance)
 {
-	SetDistance(d);
+	SetID(id);
+	SetType(type);
+	SetArrvTime(arrTime);
+	SetHealth(health);
+	SetPower(power);
+	SetReload(reload);
+	SetSpeed(speed);
+	SetDistance(distance);
 }
 
 Enemy::~Enemy()
 {
 }
 
-int Enemy::GetID() const
+
+
+bool Enemy::operator>(Enemy* other)
 {
-	return ID;
+	return this->priority > other->GetPriority();
 }
 
-
-void Enemy::SetStatus(ENMY_STATUS s)
+bool Enemy::operator>=(Enemy* other)
 {
-	status = s;
+	return this->priority >= other->GetPriority();
 }
-
-
-ENMY_STATUS Enemy::GetStatus() const
-{
-	return status;
-}
-
 
 void Enemy::DecrementDist()
 {
@@ -34,22 +36,3 @@ void Enemy::DecrementDist()
 		Distance--;
 }
 
-void Enemy::SetDistance(int d)
-{
-	if (d >= MinDistance && d <= MaxDistance)
-		Distance = d;
-	else
-		Distance = MaxDistance;
-}
-
-int Enemy::GetDistance() const
-{
-	return Distance;
-}
-
-
-
-int Enemy::GetArrvTime() const
-{
-	return ArrvTime;
-}

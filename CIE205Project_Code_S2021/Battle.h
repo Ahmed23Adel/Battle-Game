@@ -41,6 +41,9 @@ public:
 	Battle();
 	void AddAllListsToDrawingList();		//Add enemy lists (inactive, active,.....) to drawing list to be displayed on user interface
 	Castle * GetCastle();
+	void setCastle(Castle*);
+	void setInactiveQueue(Queue<Enemy*>);
+	void setNumberOfEnemies(int);
 	void RunSimulation();
 	void ActivateEnemies();		//check the inactive list and activate all enemies that has arrived
 
