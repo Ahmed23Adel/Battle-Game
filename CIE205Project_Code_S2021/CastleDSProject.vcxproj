@@ -19,13 +19,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -270,7 +270,10 @@
     </ClCompile>
     <ClCompile Include="Demo_Main.cpp" />
     <ClCompile Include="Enemies\Enemy.cpp" />
+    <ClCompile Include="Fighter.cpp" />
+    <ClCompile Include="Freezer.cpp" />
     <ClCompile Include="GUI\GUI.cpp" />
+    <ClCompile Include="Healer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Battle.h" />
@@ -297,9 +300,16 @@
     <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h" />
     <ClInclude Include="Defs.h" />
     <ClInclude Include="Enemies\Enemy.h" />
+    <ClInclude Include="Fighter.h" />
+    <ClInclude Include="Freezer.h" />
+    <ClInclude Include="Generic_DS\ArrayStack.h" />
     <ClInclude Include="Generic_DS\Node.h" />
+    <ClInclude Include="Generic_DS\PriorityQueue.h" />
     <ClInclude Include="Generic_DS\Queue.h" />
+    <ClInclude Include="Generic_DS\Stack.h" />
     <ClInclude Include="GUI\GUI.h" />
+    <ClInclude Include="Healer.h" />
+    <ClInclude Include="ReadFromFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
