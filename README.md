@@ -5,6 +5,12 @@ A very simple game, with no great graphics, but it depends heavily on the data s
 
 there is fights at each time step, the game has 3 modes, one the time step increases only with user clicks, second is when the time is increasing automatically each second, third, it automates the game it sends the results whether the castle won or not in a file called output.
 
+Sample:
+
+
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/69484554/135268906-62f6336c-4f75-4876-ae97-ee6b3e9a72bb.gif)
+
+
 Data structure:
 
 
